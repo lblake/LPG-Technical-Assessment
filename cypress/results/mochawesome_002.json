@@ -1,0 +1,697 @@
+{
+  "stats": {
+    "suites": 12,
+    "tests": 20,
+    "passes": 18,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-02-08T15:37:19.636Z",
+    "end": "2021-02-08T15:39:35.196Z",
+    "duration": 135560,
+    "testsRegistered": 20,
+    "passPercent": 90,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d548802b-18b1-426d-b568-2d92afa4c18c",
+      "title": "",
+      "fullFile": "cypress/integration/lpg_testcases/all-inclusive-page.spec.js",
+      "file": "cypress/integration/lpg_testcases/all-inclusive-page.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "36f8398e-d6bb-4e87-b105-ef2073cd0e6c",
+          "title": "Tests the Boston GO All-Inclusive page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigates to the All Inclusive page",
+              "fullTitle": "Tests the Boston GO All-Inclusive page Navigates to the All Inclusive page",
+              "timedOut": null,
+              "duration": 4461,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('contain', 'Go Boston Pass | All-Inclusive Pass');\ncy.url().should('include', '/boston/en-us/products/all-inclusive');",
+              "err": {},
+              "uuid": "c29e07dd-bd8b-454c-868e-2893eb134ef9",
+              "parentUUID": "36f8398e-d6bb-4e87-b105-ef2073cd0e6c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "8788fab0-d83d-4e9c-b57e-fd5032d94d71",
+              "title": "Tests the Home page",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Redirects user to Home page after clicking Home link",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Home page Redirects user to Home page after clicking Home link",
+                  "timedOut": null,
+                  "duration": 4661,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.contains('Home').click();\ncy.title().should('contain', 'Go Boston Pass | Attraction Pass');\ncy.contains('Experience more with Go Boston');\ncy.url().should('include', '/boston/en-us');",
+                  "err": {},
+                  "uuid": "68eefd39-9796-4761-a774-5c3bb8a07a99",
+                  "parentUUID": "8788fab0-d83d-4e9c-b57e-fd5032d94d71",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "68eefd39-9796-4761-a774-5c3bb8a07a99"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 4661,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "53a0dcda-c8ad-428a-91e0-0cc30e056aa4",
+              "title": "Tests the Pricing page links",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Redirects user to Pricing page after clicking Buy button",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Pricing page links Redirects user to Pricing page after clicking Buy button",
+                  "timedOut": null,
+                  "duration": 5589,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/all-inclusive/pricing');\ncy.contains('Buy').click({\n  force: true\n});\ncy.title().should('contain', 'Prices | All-Inclusive');\ncy.get('.products-stack-header--title').should('contain', 'Choose your All-Inclusive pass');",
+                  "err": {},
+                  "uuid": "740d1879-fda5-4c6d-b4a8-e88dfdbee113",
+                  "parentUUID": "53a0dcda-c8ad-428a-91e0-0cc30e056aa4",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Selects the Whats included link on the Pricing page",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Pricing page links Selects the Whats included link on the Pricing page",
+                  "timedOut": null,
+                  "duration": 4265,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('.secondary-menu--item').first().click();\ncy.title().should('contain', 'What You Get');\ncy.get('.content--title').should('contain', 'What’s included with the Go Boston All-Inclusive pass');",
+                  "err": {},
+                  "uuid": "e9e97fcc-7e03-4d0b-914f-d815f2df9b7d",
+                  "parentUUID": "53a0dcda-c8ad-428a-91e0-0cc30e056aa4",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Selects the How it works link on the Pricing page",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Pricing page links Selects the How it works link on the Pricing page",
+                  "timedOut": null,
+                  "duration": 4041,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('.secondary-menu--item').eq('1').click();\ncy.title().should('contain', 'How It Works');\ncy.url().should('include', '/boston/en-us/products/all-inclusive/how-it-works');\ncy.get('.content--title').should('contain', 'How does the Go Boston All–Inclusive pass work?');\ncy.get('.field').first().should('contain', 'How to get your Go Boston All-Inclusive pass');\ncy.get('.wyg-text').should('contain', 'Go Boston includes everything you need to sightsee and save');",
+                  "err": {},
+                  "uuid": "58d8472a-696f-43fe-a3ef-73657b809dc1",
+                  "parentUUID": "53a0dcda-c8ad-428a-91e0-0cc30e056aa4",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Selects the Attractions link on the Pricing page",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Pricing page links Selects the Attractions link on the Pricing page",
+                  "timedOut": null,
+                  "duration": 8363,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('.secondary-menu--item').eq('2').click();\ncy.title().should('contain', 'Attractions');\ncy.url().should('include', '/boston/en-us/products/all-inclusive/attractions');\ncy.get('.content--title').should('contain', 'All-in admission to 45+ Boston attractions');\ncy.get('.content--notice > .container').should('contain', 'Choice of one premium attraction only on 3, 5, and 7 day passes');\ncy.get('.lpg-attractions-filter__button').first().click();\ncy.get('.lpg-attractions-filter__filter-content-tags > :nth-child(1) > label').first().click({\n  force: true\n}).should('contain', 'Cultural & Historic');\ncy.get('.site-content-inner > .region').click();\ncy.get('.attraction-tile--details').first().click();\ncy.url().should('include', '/boston/en-us/attractions/salem-witch-museum');",
+                  "err": {
+                    "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<div class=\"region region-content\">...</div>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                    "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<div class=\"region region-content\">...</div>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://gocity.com/__cypress/runner/cypress_runner.js:161838:24)\n    at ensureDescendents (https://gocity.com/__cypress/runner/cypress_runner.js:150281:8)\n    at ensureDescendentsAndScroll (https://gocity.com/__cypress/runner/cypress_runner.js:150288:14)\n    at ensureElIsNotCovered (https://gocity.com/__cypress/runner/cypress_runner.js:150422:5)\n    at runAllChecks (https://gocity.com/__cypress/runner/cypress_runner.js:150571:52)\n    at retryActionability (https://gocity.com/__cypress/runner/cypress_runner.js:150594:16)\n    at tryCatcher (https://gocity.com/__cypress/runner/cypress_runner.js:10609:23)\n    at Function.Promise.attempt.Promise.try (https://gocity.com/__cypress/runner/cypress_runner.js:7883:29)\n    at tryFn (https://gocity.com/__cypress/runner/cypress_runner.js:166173:21)\n    at whenStable (https://gocity.com/__cypress/runner/cypress_runner.js:166211:12)\n    at https://gocity.com/__cypress/runner/cypress_runner.js:165706:16\n    at tryCatcher (https://gocity.com/__cypress/runner/cypress_runner.js:10609:23)\n    at Promise._settlePromiseFromHandler (https://gocity.com/__cypress/runner/cypress_runner.js:8544:31)\n    at Promise._settlePromise (https://gocity.com/__cypress/runner/cypress_runner.js:8601:18)\n    at Promise._settlePromise0 (https://gocity.com/__cypress/runner/cypress_runner.js:8646:10)\n    at Promise._settlePromises (https://gocity.com/__cypress/runner/cypress_runner.js:8726:18)\nFrom Your Spec Code:\n    at Context.eval (https://gocity.com/__cypress/tests?p=cypress/integration/lpg_testcases/all-inclusive-page.spec.js:150:47)",
+                    "diff": null
+                  },
+                  "uuid": "0e23ae6d-1d9f-412a-8dc2-f2a037869aa9",
+                  "parentUUID": "53a0dcda-c8ad-428a-91e0-0cc30e056aa4",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Selects the Real customer saving link on the Pricing page",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Pricing page links Selects the Real customer saving link on the Pricing page",
+                  "timedOut": null,
+                  "duration": 6142,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/all-inclusive/');\ncy.get('.secondary-menu--item').eq('3').click();\ncy.title().should('contain', 'Real Customer Savings');\ncy.url().should('include', '/boston/en-us/products/all-inclusive/customer-savings');\ncy.get('.content--title').should('contain', 'Real Customer Savings');",
+                  "err": {},
+                  "uuid": "855ceb8d-3c56-4cb9-a698-17a764f4b4aa",
+                  "parentUUID": "53a0dcda-c8ad-428a-91e0-0cc30e056aa4",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Selects the Plan your trip link of the Pricing page",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Pricing page links Selects the Plan your trip link of the Pricing page",
+                  "timedOut": null,
+                  "duration": 2999,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('.secondary-menu--item').eq('4').click();\ncy.title().should('contain', 'Free Guidebook');\ncy.url().should('include', '/boston/en-us/all-inclusive-guidebook');\ncy.get('.content--title').should('contain', 'Download your free Boston guidebook');",
+                  "err": {},
+                  "uuid": "740f578b-c65f-4bfb-be01-142600c74be9",
+                  "parentUUID": "53a0dcda-c8ad-428a-91e0-0cc30e056aa4",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "740d1879-fda5-4c6d-b4a8-e88dfdbee113",
+                "e9e97fcc-7e03-4d0b-914f-d815f2df9b7d",
+                "58d8472a-696f-43fe-a3ef-73657b809dc1",
+                "855ceb8d-3c56-4cb9-a698-17a764f4b4aa",
+                "740f578b-c65f-4bfb-be01-142600c74be9"
+              ],
+              "failures": [
+                "0e23ae6d-1d9f-412a-8dc2-f2a037869aa9"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 31399,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "57e628e1-2ebf-4dea-bd98-1ca325065c2b",
+              "title": "Tests the Explorer page links",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Selects the Save up to 45% link on the Explorer page",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Explorer page links Selects the Save up to 45% link on the Explorer page",
+                  "timedOut": null,
+                  "duration": 9098,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/explorer');\ncy.title().should('contain', 'Go Boston Pass | Explorer');\ncy.get('.content--subtitle').should('contain', 'Admission to 2, 3, 4 or 5 attractions');\ncy.contains('dmission to 2, 3, 4 or 5 attractions');\ncy.url().should('include', 'boston/en-us/products/explorer');\ncy.get('.key-selling-points-item--description').eq('0').click();\ncy.get('.content--title').should('contain', 'What’s included with the Go Boston Explorer pass');",
+                  "err": {},
+                  "uuid": "1bf67d1e-0f8a-4397-bad7-bdc43fcb6992",
+                  "parentUUID": "57e628e1-2ebf-4dea-bd98-1ca325065c2b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Selects the Admission to 2,3,4 or 5 link Explorer page",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Explorer page links Selects the Admission to 2,3,4 or 5 link Explorer page",
+                  "timedOut": null,
+                  "duration": 2031,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/explorer');\ncy.title().should('contain', 'Go Boston Pass | Explorer');\ncy.url().should('include', 'boston/en-us/products/explorer');\ncy.get('.key-selling-points-item--description').eq('1').click();\ncy.get('.content--title').should('contain', 'What’s included with the Go Boston Explorer pass');",
+                  "err": {},
+                  "uuid": "6639541d-a292-4502-8175-06ec37901d98",
+                  "parentUUID": "57e628e1-2ebf-4dea-bd98-1ca325065c2b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Selects the All on one digital pass link on the Explorer page",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Explorer page links Selects the All on one digital pass link on the Explorer page",
+                  "timedOut": null,
+                  "duration": 2005,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/explorer');\ncy.title().should('contain', 'Go Boston Pass | Explorer');\ncy.url().should('include', 'boston/en-us/products/explorer');\ncy.get('.key-selling-points-item--description').eq('2').click();\ncy.get('.content--title').should('contain', 'What’s included with the Go Boston Explorer pass');",
+                  "err": {},
+                  "uuid": "41d16047-56ae-48d9-bb9a-45a7bb7de4ae",
+                  "parentUUID": "57e628e1-2ebf-4dea-bd98-1ca325065c2b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Selects the Plan in advance or visit on the fly link on the Explorer page",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Explorer page links Selects the Plan in advance or visit on the fly link on the Explorer page",
+                  "timedOut": null,
+                  "duration": 1733,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/explorer');\ncy.title().should('contain', 'Go Boston Pass | Explorer');\ncy.url().should('include', 'boston/en-us/products/explorer');\ncy.get('.key-selling-points-item--description').eq('3').click();\ncy.get('.content--title').should('contain', 'What’s included with the Go Boston Explorer pass');",
+                  "err": {},
+                  "uuid": "82773365-7ea9-43c4-9c52-e465b2cf0527",
+                  "parentUUID": "57e628e1-2ebf-4dea-bd98-1ca325065c2b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "1bf67d1e-0f8a-4397-bad7-bdc43fcb6992",
+                "6639541d-a292-4502-8175-06ec37901d98",
+                "41d16047-56ae-48d9-bb9a-45a7bb7de4ae",
+                "82773365-7ea9-43c4-9c52-e465b2cf0527"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 14867,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "c88a23a1-0bf4-4409-a644-1a48c1e71c03",
+              "title": "Test Adding an Explorer pass to cart",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Chooses an Explorer pass to add to cart",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Test Adding an Explorer pass to cart Chooses an Explorer pass to add to cart",
+                  "timedOut": null,
+                  "duration": 11238,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/explorer');\ncy.get('select').select('Bos_Prod_Exp_c2').should('have.value', 'Bos_Prod_Exp_c2');\ncy.get('.form-control').eq('0').select(['2 Choice Pass from $60']);\ncy.wait(1000);\ncy.get(':nth-child(3) > .lc-cart__item-amount-wrapper > .lc-cart__item-amount > [data-testid=cartItemIncrease]').click().click();\ncy.wait(1000);\ncy.get(':nth-child(4) > .lc-cart__item-amount-wrapper > .lc-cart__item-amount > [data-testid=cartItemIncrease]').click().click();\ncy.get('.lc-cart__prices-number > .formatted-price').should('contain', '$97');\ncy.get('.lc-cart__purchase').should('contain', 'Checkout').click();\ncy.get('.content--title').should('contain', 'Review your order');\ncy.get('.block-title').should('contain', 'When will you be visiting Boston?');\ncy.get('.lc-cart__title').should('contain', 'Your Cart');\ncy.get(':nth-child(2) > .lc-cart__item-name > .lc-cart__pass-product-name').should('contain', '2 Choice Pass Adult Explorer');\ncy.get('.formatted-price').eq('1').should('contain', '$60');\ncy.get(':nth-child(3) > .lc-cart__item-name > .lc-cart__pass-product-name').should('contain', '2 Choice Pass Child (3–12) Explorer');\ncy.get('.lc-cart__prices-number > .formatted-price').should('contain', '$97');",
+                  "err": {},
+                  "uuid": "48602c17-80d3-4bbf-ad0d-53a5ca166672",
+                  "parentUUID": "c88a23a1-0bf4-4409-a644-1a48c1e71c03",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "48602c17-80d3-4bbf-ad0d-53a5ca166672"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 11238,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "232ee655-1674-4aa0-89f6-0be1febe1355",
+              "title": "Test Removing an Explorer Pass from cart",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Removes Explorer pass from cart",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Test Removing an Explorer Pass from cart Removes Explorer pass from cart",
+                  "timedOut": null,
+                  "duration": 6535,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/explorer');\ncy.get('select').select('Bos_Prod_Exp_c2').should('have.value', 'Bos_Prod_Exp_c2');\ncy.get('.form-control').eq('0').select(['2 Choice Pass from $60']);\ncy.wait(1000);\ncy.get(':nth-child(4) > .lc-cart__item-amount-wrapper > .lc-cart__item-amount > [data-testid=cartItemIncrease]').click().click();\ncy.get('.lc-cart__prices-number > .formatted-price').should('contain', '$37');\ncy.get('.lc-cart__purchase').should('contain', 'Checkout').click();\ncy.get('.content--title').should('contain', 'Review your order');\ncy.get('.block-title').should('contain', 'When will you be visiting Boston?');\ncy.get('.lc-cart__title').should('contain', 'Your Cart');\ncy.get(':nth-child(2) > .lc-cart__item-name > .lc-cart__pass-product-name').should('contain', '2 Choice Pass Child (3–12) Explorer');\ncy.get('.lc-cart__prices-number > .formatted-price').should('contain', '$37');\ncy.get('.lc-cart__item-delete').click();\ncy.get('.custom-ui > :nth-child(2)').click();\ncy.url().should('include', '/explorer#block-react-products-stack');",
+                  "err": {},
+                  "uuid": "80c3d31f-f9f9-4941-9ab5-f3ca4bcd5f6f",
+                  "parentUUID": "232ee655-1674-4aa0-89f6-0be1febe1355",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "80c3d31f-f9f9-4941-9ab5-f3ca4bcd5f6f"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 6535,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "3da4546c-a1e9-4c29-9639-4574e4791b31",
+              "title": "Test Adding & Removing an Explorer pass to cart from the Pricing page",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Selects a pass to buy on Pricing page",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Test Adding & Removing an Explorer pass to cart from the Pricing page Selects a pass to buy on Pricing page",
+                  "timedOut": null,
+                  "duration": 18053,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/explorer/pricing');\ncy.get('.products-stack-header--title').should('contain', 'Choose your Explorer pass');\ncy.get('[data-index=\"0\"] > :nth-child(1) > .lc-products-list__item-wrapper > .lc-products-list__item > .btn').click({\n  force: true\n});\ncy.get('.lc-cart__item-function-pass').should('contain', '2 Choice Pass');\ncy.wait(1000);\ncy.get('.lc-cart__purchase').click({\n  force: true\n});\ncy.wait(10000);\ncy.get(':nth-child(2) > .lc-cart__item-name > .lc-cart__pass-product-name').should('contain', '2 Choice Pass Adult Explorer');\ncy.get('.formatted-price').eq('1').should('contain', '$60');\ncy.get('.lc-cart__item-delete').click();\ncy.get('.custom-ui > :nth-child(2)').click();\ncy.url().should('include', '/explorer#block-react-products-stack');",
+                  "err": {},
+                  "uuid": "306b78e2-08ae-41e8-b74b-3c18a6249343",
+                  "parentUUID": "3da4546c-a1e9-4c29-9639-4574e4791b31",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "306b78e2-08ae-41e8-b74b-3c18a6249343"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 18053,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "653532a2-6ce1-412d-a73b-cc156c150273",
+              "title": "Test Signing up for a Limited Time Offer with a valid email address",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Can sign up for a limited offer",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Test Signing up for a Limited Time Offer with a valid email address Can sign up for a limited offer",
+                  "timedOut": null,
+                  "duration": 12346,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('#edit-email').type(\"hello@cypress.io\", {\n  force: true\n});\ncy.get('#edit-subscription').click();\ncy.get('#edit-actions-submit').click();\ncy.wait(8000);\ncy.get('.slide-in--content--header').should('contain', 'Thanks for signing up!');",
+                  "err": {},
+                  "uuid": "e7efa905-29fc-45c2-9d42-9baa8bd8e9ff",
+                  "parentUUID": "653532a2-6ce1-412d-a73b-cc156c150273",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [
+                {
+                  "uuid": "5f9e89f5-ba08-4d62-a233-305f9fa6092b",
+                  "title": "Test Signing up for a Limited Time Offer with an invalid email address",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Cannot sign up for a limited offer",
+                      "fullTitle": "Tests the Boston GO All-Inclusive page Test Signing up for a Limited Time Offer with a valid email address Test Signing up for a Limited Time Offer with an invalid email address Cannot sign up for a limited offer",
+                      "timedOut": null,
+                      "duration": 4407,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "cy.visit('/all-inclusive');\ncy.get('#edit-email').type(\"testing1234@1234.com\");\ncy.get('#edit-subscription').click();\ncy.get('#edit-actions-submit').click();\ncy.get('.form-item--error-message').should('contain', 'The email address testing1234@1234.com is not valid.');",
+                      "err": {},
+                      "uuid": "6fbe402b-867f-4a43-9e16-2c5b10bfae65",
+                      "parentUUID": "5f9e89f5-ba08-4d62-a233-305f9fa6092b",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "6fbe402b-867f-4a43-9e16-2c5b10bfae65"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 4407,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "4cda8bf0-1177-4645-a9cc-aedcef962365",
+                  "title": "Test Cannot Sign up for Limited Time offer without accepting privacy policy",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Cannot sign up for Limited Time offer",
+                      "fullTitle": "Tests the Boston GO All-Inclusive page Test Signing up for a Limited Time Offer with a valid email address Test Cannot Sign up for Limited Time offer without accepting privacy policy Cannot sign up for Limited Time offer",
+                      "timedOut": null,
+                      "duration": 4281,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "cy.visit('/all-inclusive');\ncy.get('#edit-email').clear();\ncy.get('#edit-email').type(\"testing1234@gmail.com\", {\n  force: true\n});\ncy.get('#edit-actions-submit').click();\ncy.get('.form-item--error-message').should('contain', 'Please agree to our privacy policy.');",
+                      "err": {},
+                      "uuid": "e2c74618-d6e5-498b-9381-885a09d46ffc",
+                      "parentUUID": "4cda8bf0-1177-4645-a9cc-aedcef962365",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "e2c74618-d6e5-498b-9381-885a09d46ffc"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 4281,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "88185144-9ece-4e7e-9aaa-70f6e8abcddc",
+                  "title": "Test Building Your Own Boston Pass & Adding it to the cart",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Builds Your Own Boston Pass",
+                      "fullTitle": "Tests the Boston GO All-Inclusive page Test Signing up for a Limited Time Offer with a valid email address Test Building Your Own Boston Pass & Adding it to the cart Builds Your Own Boston Pass",
+                      "timedOut": null,
+                      "duration": 18302,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": null,
+                      "code": "cy.visit('/build-your-own');\ncy.get('.attraction-tile--details').first();\ncy.get('.cart-button').first().click({\n  force: true\n});\ncy.get('.cart-icon__icon').first().click({\n  force: true\n});\ncy.get('.lpg-attractions-cart__checkout').first().click({\n  force: true\n});\ncy.wait(8000);\ncy.get('.lpg-attractions-cart__products-item-name').should('contain', 'Franklin Park Zoo');\ncy.get('.lpg-attractions-cart__prices-number ').should('contain', '$21.95');\ncy.get('.travel-date--datepicker > img').click();\ncy.get(':nth-child(2) > :nth-child(6) > .ui-state-default').click();\ncy.get('.block-region-first > .block-go-commerce > .block-container > .block-inner > .block-content-wrapper > .react-component > :nth-child(1) > :nth-child(1) > [data-testid=continueToPayment]').click();",
+                      "err": {
+                        "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.lpg-attractions-cart__products-item-name`, but never found it.",
+                        "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.lpg-attractions-cart__products-item-name`, but never found it.\n    at Context.eval (https://gocity.com/__cypress/tests?p=cypress/integration/lpg_testcases/all-inclusive-page.spec.js:303:61)",
+                        "diff": null
+                      },
+                      "uuid": "e6c92191-fa81-479c-a80b-1b2f25131742",
+                      "parentUUID": "88185144-9ece-4e7e-9aaa-70f6e8abcddc",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [
+                    "e6c92191-fa81-479c-a80b-1b2f25131742"
+                  ],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 18302,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "20c7bfd8-18b7-43a8-8569-e1e4e4548b9a",
+                  "title": "Test Boston Pass Can Be Removed from Build Your Own Page",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Boston Pass Can Be Removed",
+                      "fullTitle": "Tests the Boston GO All-Inclusive page Test Signing up for a Limited Time Offer with a valid email address Test Boston Pass Can Be Removed from Build Your Own Page Boston Pass Can Be Removed",
+                      "timedOut": null,
+                      "duration": 3836,
+                      "state": "passed",
+                      "speed": "slow",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "cy.visit('/build-your-own');\ncy.get('.attraction-tile--details').first();\ncy.get('.cart-button').first().click({\n  force: true\n});\ncy.get('.cart-icon__icon').first().click({\n  force: true\n});\ncy.get('.cart-button--active').should('contain', 'Remove').click();\ncy.get('.cart-button').should('contain', 'Add to cart');",
+                      "err": {},
+                      "uuid": "dd5a0ee3-099b-420d-9c3d-6b7bf69fe0aa",
+                      "parentUUID": "20c7bfd8-18b7-43a8-8569-e1e4e4548b9a",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "dd5a0ee3-099b-420d-9c3d-6b7bf69fe0aa"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 3836,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [
+                "e7efa905-29fc-45c2-9d42-9baa8bd8e9ff"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 12346,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "c29e07dd-bd8b-454c-868e-2893eb134ef9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4461,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

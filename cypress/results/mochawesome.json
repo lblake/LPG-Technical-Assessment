@@ -1,0 +1,241 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-06T20:14:09.892Z",
+    "end": "2021-02-06T20:14:38.631Z",
+    "duration": 28739,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ac04702f-68e4-4dad-8662-713c8ed7ddd8",
+      "title": "",
+      "fullFile": "cypress/integration/lpg_testcases/all-inclusive.spec.js",
+      "file": "cypress/integration/lpg_testcases/all-inclusive.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3da96932-884e-4fa1-b0c4-f081b2ad4660",
+          "title": "Tests the Boston GO All-Inclusive page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigates to the All Inclusive page",
+              "fullTitle": "Tests the Boston GO All-Inclusive page Navigates to the All Inclusive page",
+              "timedOut": null,
+              "duration": 5149,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.title().should('contain', 'Go Boston Pass | All-Inclusive Pass');\ncy.url().should('include', '/boston/en-us/products/all-inclusive');",
+              "err": {},
+              "uuid": "f9721354-f53d-411f-bd76-0f30d2948961",
+              "parentUUID": "3da96932-884e-4fa1-b0c4-f081b2ad4660",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "1df9f424-4925-42b7-9aaa-2b9ffa967099",
+              "title": "Tests the Home page",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Redirects user to Home page after clicking Home link",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Home page Redirects user to Home page after clicking Home link",
+                  "timedOut": null,
+                  "duration": 2581,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.contains('Home').click();\ncy.title().should('contain', 'Go Boston Pass | Attraction Pass');\ncy.contains('Experience more with Go Boston');\ncy.url().should('include', '/boston/en-us');",
+                  "err": {},
+                  "uuid": "1cb0b35c-3dbc-428a-a1ca-89fa82370e5a",
+                  "parentUUID": "1df9f424-4925-42b7-9aaa-2b9ffa967099",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "1cb0b35c-3dbc-428a-a1ca-89fa82370e5a"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2581,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "3e96890e-dbc2-4dac-974b-0c12803eda5f",
+              "title": "Tests the Pricing page",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Redirects user to Pricing page after clicking Buy button",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Pricing page Redirects user to Pricing page after clicking Buy button",
+                  "timedOut": null,
+                  "duration": 4155,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('/');\ncy.contains('Buy').click({\n  force: true\n});\ncy.title().should('contain', 'Prices | All-Inclusive');\ncy.get('.products-stack-header--title').should('contain', 'Choose your All-Inclusive pass');",
+                  "err": {},
+                  "uuid": "fcacb44f-a30b-4f94-bec5-c0b5bab296a8",
+                  "parentUUID": "3e96890e-dbc2-4dac-974b-0c12803eda5f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Selects the Whats included link on the Pricing page",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Pricing page Selects the Whats included link on the Pricing page",
+                  "timedOut": null,
+                  "duration": 2034,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('.secondary-menu--item').first().click();\ncy.title().should('contain', 'What You Get');\ncy.get('.content--title').should('contain', 'What’s included with the Go Boston All-Inclusive pass');",
+                  "err": {},
+                  "uuid": "99033860-ab6d-4276-8cc6-701806a8c180",
+                  "parentUUID": "3e96890e-dbc2-4dac-974b-0c12803eda5f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Selects the How it works link on the Pricing page",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Pricing page Selects the How it works link on the Pricing page",
+                  "timedOut": null,
+                  "duration": 4009,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('.secondary-menu--item').eq('1').click();\ncy.title().should('contain', 'How It Works');\ncy.url().should('include', '/boston/en-us/products/all-inclusive/how-it-works');\ncy.get('.content--title').should('contain', 'How does the Go Boston All–Inclusive pass work?');\ncy.get('.field').first().should('contain', 'How to get your Go Boston All-Inclusive pass');\ncy.get('.wyg-text').should('contain', 'Go Boston includes everything you need to sightsee and save');",
+                  "err": {},
+                  "uuid": "2fd48546-1735-46dd-8dc8-75e766a23b74",
+                  "parentUUID": "3e96890e-dbc2-4dac-974b-0c12803eda5f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Selects the Attractions link on the Pricing page",
+                  "fullTitle": "Tests the Boston GO All-Inclusive page Tests the Pricing page Selects the Attractions link on the Pricing page",
+                  "timedOut": null,
+                  "duration": 10389,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('.secondary-menu--item').eq('2').click();\ncy.title().should('contain', 'Attractions');\ncy.url().should('include', '/boston/en-us/products/all-inclusive/attractions');\ncy.get('.content--title').should('contain', 'All-in admission to 45+ Boston attractions');\ncy.get('.content--notice > .container').should('contain', 'Choice of one premium attraction only on 3, 5, and 7 day passes');\ncy.get('.lpg-attractions-filter__button').first().click();\ncy.get('.lpg-attractions-filter__filter-content-tags > :nth-child(1) > label').first().click().should('contain', 'Cultural & Historic');\ncy.get('.site-content-inner > .region').click();\ncy.get('.attraction-tile--details').first().click();\ncy.url().should('include', '/boston/en-us/attractions/salem-witch-museum');",
+                  "err": {},
+                  "uuid": "f205bafa-6cb3-4aa4-b805-18fc890fb325",
+                  "parentUUID": "3e96890e-dbc2-4dac-974b-0c12803eda5f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "fcacb44f-a30b-4f94-bec5-c0b5bab296a8",
+                "99033860-ab6d-4276-8cc6-701806a8c180",
+                "2fd48546-1735-46dd-8dc8-75e766a23b74",
+                "f205bafa-6cb3-4aa4-b805-18fc890fb325"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 20587,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "f9721354-f53d-411f-bd76-0f30d2948961"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5149,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "baseUrl": "https://gocity.com/boston/en-us/products",
+  "reporter": "mochawesome",
+    "reporterOptions":
+    {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+    }
+}

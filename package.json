@@ -1,0 +1,15 @@
+{
+  "name": "lpg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lloyd Blake",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "mochawesome": "^6.2.1"
+  }
+}
